@@ -1,79 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Ink</h1>
-            </header>
-            <nav>
-                <ul class="site-nav">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/features">Features</a>
-                    </li>
-                    <li>
-                        <a href="/pricing">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="/support">Support</a>
-                    </li>
-                    <li class="nav-right">
-                        <a href="/about">About</a>
-                    </li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <h1>Ink</h1>
+      </header>
 
-            <main class="flex">
-                <div class="column-main tile">
-                    <h1>Team collaboration done right</h1>
-                    <p>
-                        Thousands of teams from all over the world turn to{" "}
-                        <b>Ink</b> to communicate and get things done.
-                    </p>
-                </div>
+      <!-- Navbar -->
+      <nav>
+        <ul class="site-nav">
+          <li><a href="/">Home</a></li>
 
-                <div class="column-sidebar">
-                    <div class="tile">
-                        <form class="login-form">
-                            <h3>Login</h3>
-                            <p>
-                                <label for="username">Username</label>
-                                <input
-                                    id="username"
-                                    type="text"
-                                    name="username"
-                                />
-                            </p>
-                            <p>
-                                <label for="password">Password</label>
-                                <input
-                                    id="password"
-                                    type="password"
-                                    name="password"
-                                />
-                            </p>
-                            <button type="submit">Login</button>
-                        </form>
-                    </div>
-                    <div class="tile centered">
-                        <small>Starting at</small>
-                        <div class="cost">
-                            <span class="cost-currency">$</span>
-                            <span class="cost-dollars">20</span>
-                            <span class="cost-cents">.00</span>
-                        </div>
-                        <a class="cta-button" href="/pricing"> Sign up </a>
-                    </div>
-                </div>
-            </main>
+          <li><a href="/features">Features</a></li>
+
+          <li><a href="/pricing">Pricing</a></li>
+
+          <li><a href="/support">Support</a></li>
+
+          <li class="nav-right"><a href="/about">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Section -->
+      <main class="flex">
+        <!-- Main Column -->
+        <div class="column-main tile">
+          <h1>Team collaboration done right</h1>
+
+          <p>
+            Thousands of teams from all over the world turn to <b>Ink</b> to
+            communicate and get things done.
+          </p>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+            quae tempora cupiditate alias cumque sunt blanditiis rerum veritatis
+            quibusdam non. Repellendus rerum maiores enim soluta aperiam?
+            Expedita ipsa natus neque odit doloribus? Voluptas eius error
+            molestias excepturi fuga officia voluptatum earum at nobis rerum
+            necessitatibus odit placeat ducimus quidem culpa maxime, minus
+            adipisci laudantium aliquid quod, porro ad dolore. Labore dolorem
+            maiores rerum quos ipsam assumenda molestias sed esse sunt nostrum,
+            architecto facere velit facilis perspiciatis inventore quia ducimus,
+          </p>
+
+          <p>
+            sint delectus veritatis totam. Mollitia culpa, esse odio ipsum
+            blanditiis adipisci aperiam doloremque quisquam fugit est velit
+            dolor expedita itaque nostrum! quibusdam non. Repellendus rerum
+            maiores enim soluta aperiam? Expedita ipsa natus neque odit
+            doloribus? Voluptas eius error molestias excepturi fuga officia
+            voluptatum earum at nobis rerum necessitatibus odit placeat ducimus
+            quidem culpa maxime, minus adipisci laudantium aliquid quod, porro
+            ad dolore. Labore dolorem maiores rerum quos ipsam assumenda
+            molestias sed esse sunt nostrum, architecto facere velit facilis
+            perspiciatis inventore quia ducimus, sint delectus veritatis totam.
+            Mollitia culpa, esse odio ipsum blanditiis adipisci aperiam
+            doloremque quisquam fugit est velit dolor expedita itaque nostrum!
+          </p>
         </div>
-    </body>
+
+        <!-- SideBar -->
+        <div class="column-sidebar">
+          <!-- Form -->
+          <div class="tile">
+            <form class="login-form">
+              <h3>Login</h3>
+              <p>
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" />
+              </p>
+              <p>
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" />
+              </p>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+
+          <!-- Price Card -->
+          <div class="tile centered">
+            <small>Starting at</small>
+            <div class="cost">
+              <span class="cost-currency">$</span>
+              <span class="cost-dollars">20</span>
+              <span class="cost-cents">.00</span>
+            </div>
+            <a class="cta-button" href="/pricing"> Sign up </a>
+          </div>
+        </div>
+      </main>
+
+      <!--  -->
+      <div class="flex">
+        <div class="col-1 tile">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui,
+          libero fuga quaerat sapiente maxime impedit praesentium excepturi
+          expedita illo, distinctio repellat, dolorem aliquid quo ullam
+          temporibus. Vitae recusandae, perferendis corrupti ab officia natus,
+          architecto illo necessitatibus corporis incidunt obcaecati sequi
+          praesentium nulla. Provident ducimus omnis a unde optio quam qui nihil
+          neque, maxime cupiditate eum laboriosam assumenda ad aut, sint soluta
+          animi. Ipsam adipisci sed facilis amet consequuntur voluptate itaque
+          nulla a odio officia neque, pariatur accusamus numquam animi unde modi
+          maiores nostrum esse eum exercitationem beatae placeat nemo? Iusto
+          laborum sit quaerat ut velit tempora quo consequuntur quis.
+        </div>
+        <div class="col-2 tile">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui,
+          libero fuga quaerat sapiente maxime impedit praesentium excepturi
+          expedita illo, distinctio repellat, dolorem aliquid quo ullam
+          temporibus. Vitae recusandae, perferendis corrupti ab officia natus,
+          architecto illo necessitatibus corporis incidunt obcaecati sequi
+          praesentium nulla. Provident ducimus omnis a unde optio quam qui nihil
+          neque, maxime cupiditate eum laboriosam assumenda ad aut, sint soluta
+          animi. Ipsam adipisci sed facilis amet consequuntur voluptate itaque
+          nulla a odio officia neque, pariatur accusamus numquam animi unde modi
+          maiores nostrum esse eum exercitationem beatae placeat nemo? Iusto
+          laborum sit quaerat ut velit tempora quo consequuntur quis.
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="flex">
+        <div class="holy-grail-col1 tile">Column 1</div>
+        <div class="holy-grail-col2 tile">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore,
+          dicta!
+        </div>
+        <div class="holy-grail-col3 tile">Column 3</div>
+      </div>
+
+      <!-- flex direction have no effect on height  -->
+      <div class="flex col-dir">
+        <div class="col-dir-col1 tile">
+          <h1>flex: 2</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi amet
+          inventore debitis nostrum qui laudantium quidem dicta et eveniet nulla
+          dolor minus dolore aut earum voluptates, soluta perspiciatis eligendi
+          quia neque ex quam similique nobis facere! Eveniet quae deleniti
+          facilis eius minus. Aperiam animi maiores eos esse, impedit facilis
+          exercitationem.
+        </div>
+        <div class="col-dir-col2 tile">
+          <h1>flex: 1</h1>
+          Making Flex direction column, with property flex:1. Still the height
+          of this column is greater than above column. Because the height follow
+          css rule which is it is either determined by the outer container or
+          the height of the content.
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi amet
+            inventore debitis nostrum qui laudantium quidem dicta et eveniet
+            nulla dolor minus dolore aut earum voluptates, soluta perspiciatis
+            eligendi quia neque ex quam similique nobis facere! Eveniet quae
+            deleniti facilis eius minus. Aperiam animi maiores eos esse, impedit
+            facilis exercitationem. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Omnis esse suscipit unde repudiandae doloribus
+            doloremque et. Sequi ipsum minus illum alias dolorem, exercitationem
+            mollitia ipsa, possimus consequuntur voluptas doloribus enim.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
