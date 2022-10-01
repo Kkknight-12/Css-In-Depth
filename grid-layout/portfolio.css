@@ -1,0 +1,37 @@
+/*
+- minmax will set the range
+ - grid track falls between these values
+- auto-fill keyword is a special value
+ -  browser will place as many tracks onto
+ - the grid as it can fit, without violating
+ - the restrictions set by the specified size
+ - can also result in some empty grid tracks,
+ - if there are not enough grid items to fill
+ - them all
+- grid-auto-rows specify a 1 fr size for all
+ - implicit grid rows, so each row will be the
+ - same height.
+*/
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(
+            auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    background: aquamarine;
+}
+
+.portfolio > figure {
+    margin: 0;
+}
+
+.portfolio img {
+    max-width: 100%;
+}
+
+.portfolio figcaption {
+    padding: 0.3em 0.8em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: right;
+}

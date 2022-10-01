@@ -1,0 +1,61 @@
+.site-nav {
+  /* makes site-nav flex container and its children flex items */
+  display: flex;
+  /* ul have padding left */
+  padding-left: 0;
+  padding: 0.5em;
+  /* remove bullets */
+  list-style-type: none;
+  background-color: #5f4b44;
+}
+
+.site-nav > li {
+  /* override lobotomized owl */
+  margin-top: 0;
+}
+
+.site-nav > li > a {
+  /* a tags are inline element
+    - height and width property cant be applied */
+  display: block;
+  padding: 0.5em 1em;
+  background-color: #cc6b5a;
+  color: white;
+  /*remove underline */
+  text-decoration: none;
+}
+
+/* 
+- apply margin between li siblings
+- first li will not be included */
+.site-nav > li + li {
+  margin-left: 1.5em;
+}
+
+/* margin:auto will fill all the 
+avaialble space pushing the last
+button all the way right */
+.site-nav > .nav-right {
+  margin-left: auto;
+}
+
+/*
+===================
+===================
+===================
+===================
+===================  
+*/
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5em;
+}
+
+.grid > * {
+  background-color: darkgray;
+  color: white;
+  padding: 2em;
+  border-radius: 0.5em;
+}

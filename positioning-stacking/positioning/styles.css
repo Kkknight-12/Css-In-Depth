@@ -1,0 +1,73 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    min-height: 200vh;
+    margin: 0;
+}
+
+button{
+    padding: 0.5em 0.7em;
+    border: 1px solid #8d8d8d;
+    background-color: white;
+    font-size: 1em;
+}
+
+.top-banner{
+    padding: 1em 0;
+    background-color: #ffd689;
+}
+
+.top-banner-inner{
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Modal Styles */
+
+.modal{
+    display: none;
+}
+
+.modal-backdrop{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-body{
+    position: fixed;
+    top: 3em;
+    bottom: 3em;
+    right: 20%;
+    left: 20%;
+    padding: 2em 3em;
+    background: white;
+    overflow: auto;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0.3em;
+    right: 0.4em;
+    padding: 0.3em;
+    cursor: pointer;
+    /*pseudo element css */
+    font-size: 2em;
+    height: 1em;
+    width: 1em;
+    text-indent: 10em;
+    overflow: hidden;
+    /* border: 0; */
+
+}
+
+.modal-close::after{
+    content: '\00D7';
+    position: absolute;
+    line-height: 0.5;
+    top: 0.24em;
+    left: 0.16em;
+    text-indent: 0;
+}
